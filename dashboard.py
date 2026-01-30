@@ -194,7 +194,7 @@ class DashboardRenderer:
 
     def _format_bytes(self, nbytes):
         """Format bytes into human-readable units."""
-        return self.format_bytes(nbytes)
+        return ResourceMonitor.format_bytes(nbytes)
 
     def _draw_progress_bar(self, win, y, x, width, percent, label=""):
         """Draw a visual progress bar representing usage percentage."""
